@@ -1,0 +1,86 @@
+body{
+    display:flex;
+    justify-content:center;
+    height:100vh;
+    align-items: center;
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.password-container{
+    background-color: pink;
+    width:500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 20px;
+
+}
+
+.input-container{
+    display:flex;
+    border: 2px solid black;
+    padding:10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input{
+    border:none;
+    outline:none;
+    background-color: transparent;
+    font-size: 18px;
+    letter-spacing: 4px;
+
+}
+
+.input::placeholder{
+    letter-spacing: 0ch;
+}
+.fa-copy{
+    cursor:pointer;
+    opacity:0.5;
+    
+}
+
+.fa-copy:hover{
+    opacity:1;
+}
+
+.generate{
+    border:none;
+    padding: 10px 20px;
+    margin-top:10px;
+    background:black;
+    color: white;
+    border-radius: 7px;;
+    cursor:pointer;
+    font-size: 15px;
+}
+.generate:hover{
+    background-color: green;
+
+}
+.generate:active{
+    transform: scale(0.95);
+}
+
+.alert-container{
+    position:fixed;
+    width: 300px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgreen;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.active.alert-container{
+    right:-300px;
+    transition: right 0.5s ease-in-out;
+}
